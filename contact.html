@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <section>
+      <div class="nav">
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a class="focused" href="./contact.html">Contact</a></li>
+          <li><a href="./gallery.html">Gallery</a></li>
+          <li><a href="./more.html">More</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="main">
+      <h1>Contact Us</h1>
+    </section>
+    <form action="/form-handling-url" method="post">
+        <fieldset>
+        <legend class = "user"><label for ="user"></label><input type = "text" placeholder="Pet Form"></legend>
+        <div class = "box">
+
+            <div class="above">
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="first_name">
+
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="last_name">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email_address">
+            </div>
+
+
+            <div class="beside">
+                <label for="role">Pet Status:</label>
+                <br>
+                <select required>
+                    <option value="" disabled selected hidden>
+
+                <option value="student">dog owner</option>
+                <option value="instructor">cat owner</option>
+                <option value="guest">no pets</option>
+                </select>
+            </div>
+            <div class="beside">
+                <label for="date">Date:</label>
+                <br>
+
+                <input type="date" id="date" name="date">
+            </div>
+
+            <p>Choose your favorite pet:</p>
+            <div class="radio-row">
+                <input type="radio" style="height:20px; width:20px;" id="html" name="fav_language" value="HTML">
+                <label for="html">Dog</label><br>
+                <input type="radio" style="height:20px; width:20px;"  id="css" name="fav_language" value="CSS">
+                <label for="css">Cat</label><br>
+                <input type="radio" style="height:20px; width:20px;"  id="javascript" name="fav_language" value="JavaScript">
+                <label for="javascript">Bird</label>
+            </div>
+
+
+            <div class="above" >
+                <label for="comments">Comments:</label>
+                <textarea id="comments" name="comments" ></textarea>
+            </div>
+
+
+
+            <div class="radio-row2">
+                <input type="checkbox" style="height:25px; width:25px;" id="signup" name="signup" value="Signup">
+                <label for="signup">sign up for news</label><br>
+                <input type="checkbox" style="height:25px; width:25px;" id="terms" name="terms" value="Terms">
+                <label for="terms"> agree to terms</label>
+            </div>
+
+            <div>
+                <button type="submit">Submit</button>
+            </div>
+    </div>
+
+        </fieldset>
+    </form>
+  </body>
+</html>
