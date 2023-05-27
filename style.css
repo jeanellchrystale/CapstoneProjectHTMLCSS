@@ -9,28 +9,38 @@ body {
 
 /* Top NAV */
 .nav {
-  background: rgb(110, 151, 226);
+
+
+  width: 100%;
 }
-.nav > ul {
+.nav ul {
+  list-style-type: none;
   margin: 0;
-  padding: 20px;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid #e7e7e7;
+  background-color: rgb(110, 151, 226);
 }
 
-.nav > ul > li {
-  list-style: none;
-  margin: 10px 20px;
+.nav li {
+  float: left;
 }
 
-.nav > ul > li > a {
-  text-decoration: none;
+.nav li a {
+  display: block;
   color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 
-.nav > ul > li > a.focused {
-  color: rgb(177, 223, 212);
+l.navzi a:hover:not(.active) {
+  background-color: #ddd;
+}
+
+li a.active {
+  color:black;
+  background-color: white;
 }
 
 /* Home Page */
@@ -48,7 +58,7 @@ body {
   margin: 0;
   text-align: center;
   background: rgb(110, 151, 226);
-  color: white;
+  color: whte;
 }
 
 .main > h1 {
@@ -64,8 +74,8 @@ body {
 }
 
 .content > section {
-  margin: 50px;
-  width: 33%;
+  margin: 40px;
+  width: 40%;
 
 }
 h2 {
@@ -168,14 +178,14 @@ form{
 .images {
   margin: 70px 40px;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  grid-gap: 15px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 1px;
 }
 
 .gallery-image {
   border: 1px solid #ccc;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  box-shadow: 10px 5px 5px grey;
   text-decoration: none;
   color: black;
 }
@@ -200,4 +210,18 @@ form{
 .links {
     margin: 70px auto;
     max-width: 600px;
+  }
+  .footer {
+    text-align: center;
+    padding: 3px;
+    background-color: rgb(224, 230, 241);
+    color: black;
+
+
+ }
+
+  .footer img {
+    margin-top: 1em;
+    border: 2px solid black;
+    padding: 10px;
   }
